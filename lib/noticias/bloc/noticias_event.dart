@@ -8,3 +8,10 @@ abstract class NoticiasEvent extends Equatable {
 }
 
 class GetNewsEvent extends NoticiasEvent {}
+
+class SearchEvent extends NoticiasEvent {
+  final String query;
+  SearchEvent({@required this.query});
+  @override
+  List<Object> get props => [query];
+}

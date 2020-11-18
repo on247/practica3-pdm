@@ -18,8 +18,7 @@ class ItemNoticia extends StatelessWidget {
                 flex: 1,
                 child: Image.network(
                   "${noticia.urlToImage}",
-                  height: 100,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                 ),
               ),
               Expanded(

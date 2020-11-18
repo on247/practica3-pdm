@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "890441340495",
+    "firebase_url": "https://pract-noticias.firebaseio.com",
+    "project_id": "pract-noticias",
+    "storage_bucket": "pract-noticias.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890441340495:android:ea9e24b18188a0e3f4bc3a",
+        "android_client_info": {
+          "package_name": "mx.iteso.noticias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890441340495-p5prne8aat86ehcoaij2l0ajbsjbsil4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mx.iteso.noticias",
+            "certificate_hash": "74dc58f735eef13b8cdcf58786e72373002bd578"
+          }
+        },
+        {
+          "client_id": "890441340495-uuc3go9u0fg1pn948f67jvn3lf6j31jt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuqowiu0b-mi5euRoRty4-2xk42QGYuQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890441340495-uuc3go9u0fg1pn948f67jvn3lf6j31jt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

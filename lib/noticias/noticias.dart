@@ -33,7 +33,14 @@ class _NoticiasState extends State<Noticias> {
           create: (context) => NoticiasBloc()..add(GetNewsEvent()),
           child: BlocConsumer<NoticiasBloc, NoticiasState>(
             listener: (context, state) {
-              //
+              if (state is NoticiasErrorState) {
+                Scaffold.of(context).showSnackBar(
+                  SnackBar(
+                    backgroundColor: Colors.red,
+                    content: Text(state.message),
+                  ),
+                );
+              }
             },
             builder: (context, state) {
               if (state is NoticiasSuccessState) {

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:noticias/buscar/buscar.dart';
-import 'package:noticias/creadas/mis_noticias.dart';
 import 'package:noticias/noticias/noticias.dart';
-import 'package:noticias/nuevo/crear_noticia.dart';
+
+import 'mis_noticias/creadas/mis_noticias.dart';
+import 'mis_noticias/nuevo/crear_noticia.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -13,7 +14,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _currentPageIndex = 0;
-  final _pagesList = [
+  MisNoticias misNoticias = MisNoticias();
+  List<Widget> _pagesList = [
     Noticias(),
     Buscar(),
     MisNoticias(),

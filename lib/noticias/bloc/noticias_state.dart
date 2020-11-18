@@ -19,6 +19,14 @@ class NoticiasSuccessState extends NoticiasState {
   List<Object> get props => [noticiasSportList, noticiasBusinessList];
 }
 
+class NoticiasSearchSuccessState extends NoticiasState {
+  final List<Noticia> searchResults;
+
+  NoticiasSearchSuccessState({@required this.searchResults});
+  @override
+  List<Object> get props => [searchResults];
+}
+
 class NoticiasErrorState extends NoticiasState {
   final String message;
 
